@@ -1,0 +1,101 @@
+<!-- this is our Document type -->
+<!DOCTYPE html>
+<!-- here html,head,tittle,body are tags -->
+<!-- here lang,charset,etc are atributes -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js"></script>
+  <style>
+    .score-board{
+      display: flex;
+      height: 10vh;
+      width: 11%;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 15px;
+
+    
+      background-color: pink;
+      border: 2px solid palevioletred;
+      border-radius: 30px;
+    }
+    .container{
+      display: flex;
+      height: 100vh;
+    
+      justify-content: center;
+      align-content:center ;
+    }
+    body{
+      background:  url('background.jpg');
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .grid{
+      /* background-color: aqua; */
+      background-color: rgba(255, 0, 0, 0.2);;
+      height: 560px;
+      width: 560px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px;
+      border-radius: 10px;
+      background-position: center center;
+
+    }
+    .grid div{
+        height: 70px;
+        width: 70px;
+    }
+    .grid div{
+      background-size: 50px ;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    #score{
+      text-align: center;
+      margin: 0px 0px;
+    
+    }
+    h2 {
+      text-align: center;
+      margin: 0px 0px;
+    }
+
+
+  </style>
+  
+  
+</head>
+<body>
+
+
+    <div class="score-board">
+      <h2>Score</h2>
+      <h1 id="score" ></h1>
+    </div>
+    <div class="container">
+      
+      
+      <div class="grid">
+        
+      </div>
+
+   
+    <audio id="myAudio1">
+      <source  src="audio/audio3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="myAudio2">
+      <source  src="audio/audio4.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="myAudio3">
+      <source  src="audio/audio2.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
